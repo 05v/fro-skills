@@ -1,0 +1,31 @@
+{
+    "title": "Todo 1",
+    "author": "VV",
+    "activities": [
+        {
+            "description": "aaadolor sit amet consectetur adipisicing elit. Cupiditate sint ipsum eaque sequi ea amet ipsa incidunt deserunt sapiente vel est iusto sit reiciendis, doloremque asperiores voluptate veritatis rerum eius.",
+            "label": "Vandaag",
+            "extraClass": null
+        },
+        {
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint ipsum eaque sequi ea amet ipsa incidunt deserunt sapiente vel est iusto sit reiciendis, doloremque asperiores voluptate veritatis rerum eius.",
+            "label": "Morgen",
+            "extraClass": "tomorrow"
+        },
+        {
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint ipsum eaque sequi ea amet ipsa incidunt deserunt sapiente vel est iusto sit reiciendis, doloremque asperiores voluptate veritatis rerum eius.",
+            "label": "Weekend",
+            "extraClass": "weekend"
+        },
+        {
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint ipsum eaque sequi ea amet ipsa incidunt deserunt sapiente vel est iusto sit reiciendis, doloremque asperiores voluptate veritatis rerum eius.",
+            "label": "Volgende Week",
+            "extraClass": "nextWeek"
+        },
+        {
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sint ipsum eaque sequi ea amet ipsa incidunt deserunt sapiente vel est iusto sit reiciendis, doloremque asperiores voluptate veritatis rerum eius.",
+            "label": "Ooit",
+            "extraClass": "sometime"
+        }
+    ]
+}

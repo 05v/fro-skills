@@ -1,0 +1,16 @@
+.main {
+
+    padding: 0 2rem;
+
+    &__newbox {
+        background-image: url(img/alarm_clock_banner.jpg);
+        height: 100rem;
+
+        &__img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+
+
+}

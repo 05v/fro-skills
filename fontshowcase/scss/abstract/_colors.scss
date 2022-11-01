@@ -1,0 +1,9 @@
+$background: #FBF9F1;
+$darkmode-background: #333333;
+//
+$font-color: #333333;
+$darkmode-font-color: #FBF8F1;
+//
+$primary-color: #54BAB9;
+$gradient: linear-gradient(to bottom right, $primary-color, darken($primary-color, 15%));
+$darkmode--gradient: linear-gradient(to bottom right, darken($primary-color, 15%), darken($primary-color, 30%));

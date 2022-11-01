@@ -1,0 +1,50 @@
+@use 'fonts';
+@use 'colors';
+@use 'components';
+.over {
+    @extend %section;
+}
+
+.over__header {
+    @extend %header;
+}
+
+.over__h2 {
+    @extend %h2Handwriting;
+}
+
+.over__collumns {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 100%;
+}
+
+.over__collumn {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.over__p {
+    width: 55ch;
+    color: colors.$font-color;
+}
+
+.kenmerken__logo {
+    @extend %icon;
+    font-size: 190%;
+}
+
+.over__figure {
+    width: 40rem;
+    height: 60rem;
+    object-fit: cover;
+}
+
+.over__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}

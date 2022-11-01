@@ -1,0 +1,48 @@
+@use 'colors';
+@use 'fonts';
+// Call to action component with :hover
+%cta {
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background-color: colors.$pink;
+    color: #EEE;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+%cta:hover {
+    cursor: pointer;
+    background-color: darken(colors.$pink, 10%);
+    transition: 0.2s;
+}
+
+// Default header for sections
+%header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+// h2 heading for sections and header
+%h2Handwriting {
+    font-family: 'Great Vibes', cursive;
+    font-size: 380%;
+    color: colors.$font-color;
+}
+
+// Default Sections
+%section {
+    min-height: 80rem;
+    padding: 4rem;
+    border-bottom: colors.$border-pink-small;
+}
+
+// Icons
+%icon {
+    font-size: 250%;
+    color: colors.$font-color;
+    border: colors.$border-pink;
+    border-radius: 50%;
+    padding: 1.5rem;
+}

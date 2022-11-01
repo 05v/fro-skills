@@ -1,0 +1,27 @@
+@media screen and (max-width: 62.5rem) {
+    body {
+        padding: 2rem;
+    }
+    .header {
+        width: calc(100vw - 2rem - 2rem);
+    }
+    .showcase {
+        width: calc(100vw - 2rem - 2rem);
+    }
+}
+
+@media screen and (max-width: 37.5rem) {
+    body {
+        font-size: 1.6rem;
+    }
+    .header {
+        gap: 4rem;
+        flex-direction: column;
+        &__rightWrapper {
+            flex-direction: column;
+        }
+    }
+    .showcase__input {
+        width: 100%;
+    }
+}

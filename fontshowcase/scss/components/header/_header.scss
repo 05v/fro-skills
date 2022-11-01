@@ -1,0 +1,67 @@
+@use "../../abstract/mixins";
+@use "../../abstract/colors";
+@use '../../abstract/animations';
+// Header
+.header {
+    width: 80vw;
+    max-width: 150rem;
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: colors.$background;
+    padding: 4rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    @include animations.popup;
+    // Logo block
+    &__logo {
+        font-size: 200%;
+        border-radius: 50%;
+        color: #FBF8F1;
+        background: colors.$gradient;
+        border: 0.2rem dashed transparent;
+        padding: 2rem;
+        box-sizing: border-box;
+        backface-visibility: hidden;
+        width: 8rem;
+        height: 8rem;
+        @include mixins.flexCenter;
+        &:hover {
+            color: colors.$primary-color;
+            background: transparent;
+            box-sizing: border-box;
+            @include mixins.rotate;
+            border: 0.2rem dashed colors.$primary-color;
+        }
+    }
+    // Right wrapper
+    &__rightWrapper {
+        @include mixins.flexCenter;
+        gap: 4rem;
+        align-items: center;
+    }
+    // Avatar
+    &__avatar {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        color: colors.$primary-color;
+        &:hover {
+            @include mixins.rotate(0.8s);
+        }
+    }
+    // Image / img
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+// Dark Mode
+.header__darkmode {
+    background-color: colors.$darkmode-background;
+    color: colors.$darkmode-font-color;
+}

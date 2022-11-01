@@ -1,0 +1,65 @@
+@use "../../abstract/mixins";
+@use "../../abstract/colors";
+@use '../../abstract/animations';
+.showcase {
+    width: 80vw;
+    max-width: 150rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 4rem;
+    background-color: colors.$background;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: inset 0 -1rem 2rem 0 rgb(84, 186, 185, 0.4);
+    @include animations.popup;
+    &__input {
+        font-size: 100%;
+        padding: 2rem;
+        padding-left: 0;
+        width: 50%;
+        border: none;
+        background: none;
+        border-bottom: 0.2rem solid colors.$primary-color;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__wrapper {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    &__font {
+        font-size: 120%;
+        font-weight: 400;
+    }
+    &__output {
+        font-size: 250%;
+        &--cursive {
+            @include mixins.fontCursive;
+        }
+        &--sansSerif {
+            @include mixins.fontsansSerif;
+        }
+        &--Serif {
+            @include mixins.fontSerif;
+        }
+    }
+}
+
+// Dark Mode
+.showcase__darkmode {
+    background-color: colors.$darkmode-background;
+    color: colors.$darkmode-font-color;
+    box-shadow: inset 0 -1rem 2rem 0 colors.$darkmode--gradient;
+    &__input {
+        color: colors.$darkmode-font-color;
+    }
+}

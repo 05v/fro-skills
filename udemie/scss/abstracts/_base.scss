@@ -1,0 +1,9 @@
+@use "./mixins.scss";
+@use "./variables.scss";
+
+body {}
+
+.main {
+    display: flex;
+    gap: 4rem;
+}

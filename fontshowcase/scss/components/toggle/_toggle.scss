@@ -1,0 +1,33 @@
+@use "../../abstract/colors";
+.toggle__input {
+    appearance: none;
+    height: 4rem;
+    width: 9rem;
+    border-radius: 5rem;
+    position: relative;
+    background: colors.$darkmode-background;
+    &:hover {
+        cursor: pointer;
+    }
+    &:checked {
+        background: colors.$background;
+    }
+    &:checked::after {
+        left: 80%;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background: colors.$gradient;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        transition-duration: 0.2s;
+    }
+    &:focus:after {
+        outline: 0.2rem solid blue
+    }
+}

@@ -1,0 +1,13 @@
+@use "../abstracts/variables.scss";
+@use "../abstracts/mixins.scss";
+.numbersCard {
+    width: 40rem;
+    height: 30rem;
+    border-radius: 1rem;
+    background: variables.$numbersCardBackground;
+    box-shadow: variables.$boxShadow;
+    @include mixins.flex;
+    &__h2 {
+        font-weight: 400;
+    }
+}

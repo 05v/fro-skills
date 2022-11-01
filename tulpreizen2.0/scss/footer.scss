@@ -1,0 +1,12 @@
+@use 'components';
+.footer {
+    display: flex;
+    align-items: center;
+    @extend %header;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.footer__a {
+    font-size: 200%;
+}

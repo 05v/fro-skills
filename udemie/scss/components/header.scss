@@ -1,0 +1,120 @@
+@use '../abstracts/variables';
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    padding: 1.2rem;
+    font-family: map-get(variables.$fontVars, "normalFont");
+    // background-color: blue;
+    box-shadow: 0 0.2rem 0.2rem rgb(208, 208, 208);
+    gap: 1.2rem;
+    z-index: 1;
+
+    &__shoppingcard {
+        &:hover {
+            color: #5624d0;
+        }
+    }
+
+    &__element {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 8.5rem;
+    }
+
+    &__textitem {
+        // background-color: red;
+        font-size: map-get(variables.$fontVars, "headerFontSize");
+
+        &:hover {
+            color: #5624d0;
+        }
+    }
+
+    &__searchbar {
+        background-color: darken(white, 3%);
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 1.2rem;
+        border-radius: 10rem;
+        gap: 1.2rem;
+        border: 0.1rem solid black;
+        width: 35%;
+
+
+        &__input {
+            border: none;
+            background-color: darken(white, 3%);
+            font-family: map-get(variables.$fontVars, "normalFont");
+            width: 100%;
+        }
+
+        &__icon {
+            font-size: 120%;
+        }
+
+        &:focus {
+            border: none;
+        }
+    }
+
+    &__icon {
+        font-size: 140%;
+    }
+
+
+    &__login {
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border: 1px solid #000000;
+        padding: 0 1.4rem;
+        height: 4rem;
+
+        &:hover {
+            color: #5624d0;
+        }
+    }
+
+    &__signup {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000000;
+        border: 1px solid black;
+        padding: 0 1.4rem;
+        height: 4rem;
+
+        &:hover {
+            color: #5624d0;
+        }
+    }
+
+    &__language {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border: 1px solid #000000;
+        padding: 0 1.4rem;
+        height: 4rem;
+
+        &:hover {
+            color: #5624d0;
+        }
+    }
+
+}
