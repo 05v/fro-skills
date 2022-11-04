@@ -1,0 +1,32 @@
+@use '../abstracts/variables';
+
+.fourthSection {
+    margin-top: 6.4rem;
+    width: 100%;
+    max-width: 134rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__textWrapper {
+        margin-bottom: 1.6rem;
+        max-width: 80rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__h2 {
+        font-family: map-get(variables.$fontVars, 'normalFont');
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -.02rem;
+        font-size: 2.4rem;
+    }
+}

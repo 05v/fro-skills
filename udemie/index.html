@@ -2,76 +2,550 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trellie</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Playfair+Display&display=swap"
         rel="stylesheet">
     <script src="js/dd3de96bc3.js"></script>
     <script src="js/main.js" defer></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
     <header class="header">
-
         <div class="header__element header__logo">
-            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg">
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="" />
         </div>
-
         <div class="header__element header__textitem">
             <p>Categories</p>
         </div>
-
-
         <div class="header__element header__searchbar">
-            <i class="header__searchbar__icon fa-solid fa-magnifying-glass"></i>
-            <input class="header__searchbar__input" placeholder="Search for anything">
+            <i class="header__searchbarIcon fa-solid fa-magnifying-glass"></i>
+            <input class="header__searchbarInput" placeholder="Search for anything" />
         </div>
-
-
         <div class="header__element header__textitem">
             <p>Udemie Business</p>
         </div>
-
         <div class="header__element header__textitem">
             <p>Teach on Udemie</p>
         </div>
-
-
         <div class="header__element header__icon">
-            <i class="header__shoppingcart fa-sharp fa-solid fa-cart-shopping"></i>
+            <i class="header__shoppingCart fa-sharp fa-solid fa-cart-shopping"></i>
         </div>
-
-
-        <div class="header__element">
-            <button class="header__login">Log in</button>
-        </div>
-
-        <div class="header__element">
-            <button class="header__signup">Sign up</button>
-        </div>
-
-        <div class="header__element header__icon header__language">
-            <i class="fa-solid fa-globe"></i>
-        </div>
-    </header>
-
-    <main class="main">
-        <div class="main__newbox">
-            <img class="main__newbox__img" src="img/alarm_clock_banner.jpg">
-            <div class="main__newbox__div">
-                <h2 class="main__newbox__div__h2">New to Udemie? Lucky you.</h2>
-                <p class="main__newbox__div__p">Enjoy new-learner savings with courses starting at €14.99 for a very
-                    limited time.</p>
+        <div class="header__endWrapper">
+            <div class="header__element">
+                <button class="header__login">Log in</button>
+            </div>
+            <div class="header__element">
+                <button class="header__signup">Sign up</button>
+            </div>
+            <div class="header__element header__icon header__language">
+                <i class="fa-solid fa-globe"></i>
             </div>
         </div>
-    </main>
+    </header>
+    <main class="main">
+        <!-- First Section -->
+        <div class="firstSection">
+            <section class="firstSection__section">
+                <img class="firstSection__banner" src="img/alarm_clock_banner.jpg" />
+                <div class="firstSection__textWrapper">
+                    <h2 class="firstSection__h2">New to Udemie? Lucky you.</h2>
+                    <p class="firstSection__p">
+                        Enjoy new-learner savings with courses starting at €14.99 for a
+                        very limited time.
+                    </p>
+                </div>
+            </section>
+        </div>
 
+        <!-- Second Section -->
+        <div class="secondSection">
+            <div class="secondSection__textWrapper">
+                <h2 class="secondSection__h2">
+                    A broad selection of courses
+                </h2>
+                <p class="secondSection__p">
+                    Choose from 204,000 online video courses with new additions
+                    published every month
+                </p>
+            </div>
+            <div class="secondSection__categoryWrapper">
+                <div class="secondSection__categoryItem secondSection__active">
+                    Python
+                </div>
+                <div class="secondSection__categoryItem secondSection__inactive">
+                    Excel
+                </div>
+                <div class="secondSection__categoryItem secondSection__inactive">
+                    Web Development
+                </div>
+                <div class="secondSection__categoryItem secondSection__inactive">
+                    JavaScript
+                </div>
+                <div class="secondSection__categoryItem secondSection__inactive">
+                    Data Science
+                </div>
+                <div class="secondSection__categoryItem secondSection__inactive">
+                    AWS Certification
+                </div>
+                <div class="secondSection__categoryItem secondSection__inactive">
+                    Drawing
+                </div>
+            </div>
+            <div class="secondSection__offeredWrapper">
+                <div class="secondSection__offeredtextWrapper">
+                    <h2 class="secondSection__h2">
+                        Expand your career opportunities with Python
+                    </h2>
+                    <p class="secondSection__p">
+                        Take one of Udemy’s range of Python courses and learn how to code
+                        using this incredibly useful language. Its simple syntax and
+                        readability makes Python perfect for Flask, Django, data science,
+                        and machine learning. You’ll learn how to build everything from
+                        games to sites to apps. Choose from a range of courses that will
+                        appeal to both beginners and advanced developers alike.
+                    </p>
+                    <button class="secondSection__button">
+                        Explore Python
+                    </button>
+                </div>
+                <div class="secondSection__carouselWrapper">
+                    <!-- Start of 1 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 1 item ABOVE THIS LINE -->
+
+                    <!-- Start of 2 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 2 item ABOVE THIS LINE -->
+
+                    <!-- Start of 3 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 3 item ABOVE THIS LINE -->
+
+                    <!-- Start of 4 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 4 item ABOVE THIS LINE -->
+
+                    <!-- Start of 5 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 5 item ABOVE THIS LINE -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Section -->
+        <div class="thirdSection">
+            <div class="thirdSection__divWrapper">
+                <div class="thirdSection__itemWrapper">
+                    <i class="thirdSection__icon fa-solid fa-play"></i>
+                    <div class="thirdSection__textWrapper">Learn in-demand skills with over 204,000 video courses</div>
+                </div>
+                <div class="thirdSection__itemWrapper">
+                    <i class="thirdSection__icon fa-solid fa-star"></i>
+                    <div class="thirdSection__textWrapper">Choose courses taught by real-world experts</div>
+                </div>
+                <div class="thirdSection__itemWrapper">
+                    <i class="thirdSection__icon fa-solid fa-infinity"></i>
+                    <div class="thirdSection__textWrapper">Learn at your own pace, with lifetime access on mobile and
+                        desktop</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Section -->
+        <div class="fourthSection">
+            <section class="fourthSection__section">
+                <div class="fourthSection__textWrapper">
+                    <h2 class="fourthSection__h2">Students are viewing</h2>
+                </div>
+                <div class="secondSection__carouselWrapper">
+                    <!-- Start of 1 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 1 item ABOVE THIS LINE -->
+
+                    <!-- Start of 2 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 2 item ABOVE THIS LINE -->
+
+                    <!-- Start of 3 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 3 item ABOVE THIS LINE -->
+
+                    <!-- Start of 4 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 4 item ABOVE THIS LINE -->
+
+                    <!-- Start of 5 item -->
+                    <div class="secondSection__itemDiv">
+                        <div>
+                            <div class="secondSection__productWrapper">
+                                <div class="secondSection__productImage">
+                                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+                                </div>
+                                <div class="secondSection__descriptionSection">
+                                    <h3 class="secondSection__h3">
+                                        Learn Python: The Complete Python Programming Course</h3>
+                                    <span class="secondSection__description">Avinash
+                                        Jain, The Codex</span>
+                                    <div class="secondSection__ratingWrapper">
+                                        <span class="secondSection__ratingNumber">4.3</span>
+                                        <div class="secondSection__ratingStars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="secondSection__ratingAmount">(3,675)</span>
+                                    </div>
+                                    <div class="secondSection__currentPrice">
+                                        <span>€16.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of 5 item ABOVE THIS LINE -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Fifth Section -->
+        <div class="fifthSection">
+            <section class="fifthSection__section">
+                <div class="fifthSection__textWrapper">
+                    <h2 class="fifthSection__h2">Top categories</h2>
+                </div>
+                <div class="fifthSection__carouselWrapper">
+                    <div class="fifthSection__itemsWrapper">
+                        <div class="fifthSection__item">
+                            <div><img class="fifthSection__itemImage"
+                                    src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></div>
+                            <span class="fifthSection__itemText">Design</span>
+                        </div>
+                    </div>
+
+                    <div class="fifthSection__itemsWrapper">
+                        <div class="fifthSection__item">
+                            <div><img class="fifthSection__itemImage"
+                                    src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></div>
+                            <span class="fifthSection__itemText">Design</span>
+                        </div>
+                    </div>
+
+                    <div class="fifthSection__itemsWrapper">
+                        <div class="fifthSection__item">
+                            <div><img class="fifthSection__itemImage"
+                                    src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></div>
+                            <span class="fifthSection__itemText">Design</span>
+                        </div>
+                    </div>
+
+                    <div class="fifthSection__itemsWrapper">
+                        <div class="fifthSection__item">
+                            <div><img class="fifthSection__itemImage"
+                                    src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></div>
+                            <span class="fifthSection__itemText">Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fifthSection__carouselWrapper">
+                    <div class="fifthSection__itemsWrapper">
+                        <div class="fifthSection__item">
+                            <div><img class="fifthSection__itemImage"
+                                    src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></div>
+                            <span class="fifthSection__itemText">Design</span>
+                        </div>
+                    </div>
+
+                    <div class="fifthSection__itemsWrapper">
+                        <div class="fifthSection__item">
+                            <div><img class="fifthSection__itemImage"
+                                    src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></div>
+                            <span class="fifthSection__itemText">Design</span>
+                        </div>
+                    </div>
+
+                    <div class="fifthSection__itemsWrapper">
+                        <div class="fifthSection__item">
+                            <div><img class="fifthSection__itemImage"
+                                    src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></div>
+                            <span class="fifthSection__itemText">Design</span>
+                        </div>
+                    </div>
+
+                    <div class="fifthSection__itemsWrapper">
+                        <div class="fifthSection__item">
+                            <div><img class="fifthSection__itemImage"
+                                    src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></div>
+                            <span class="fifthSection__itemText">Design</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sixth Section -->
+
+    </main>
 </body>
 
 </html>

@@ -4,6 +4,9 @@
 body {}
 
 .main {
+
+    padding: 0 2rem;
     display: flex;
-    gap: 4rem;
+    flex-direction: column;
+
 }
