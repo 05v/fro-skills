@@ -12,6 +12,11 @@
     gap: 1.2rem;
     z-index: 1;
 
+    &__burgerMenu {
+        display: none !important;
+        font-size: 150%;
+    }
+
     &__shoppingCart {
         font-size: 150%;
 
@@ -33,6 +38,8 @@
     &__textitem {
         // background-color: red;
         font-size: map-get(variables.$fontVars, "headerFontSize");
+
+        white-space: nowrap;
 
         &:hover {
             color: #5624d0;

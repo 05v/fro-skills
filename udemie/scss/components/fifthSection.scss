@@ -57,14 +57,12 @@
         position: relative;
         overflow: hidden;
         padding-right: 2rem;
-
     }
 
     &__itemImage {
         max-width: 100%;
         height: auto;
         background: #f7f9fa;
-        display: block;
         object-fit: contain;
     }
 

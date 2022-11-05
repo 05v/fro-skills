@@ -27,6 +27,10 @@ html {
   gap: 1.2rem;
   z-index: 1;
 }
+.header__burgerMenu {
+  display: none !important;
+  font-size: 150%;
+}
 .header__shoppingCart {
   font-size: 150%;
 }
@@ -43,6 +47,7 @@ html {
 }
 .header__textitem {
   font-size: 1.4rem;
+  white-space: nowrap;
 }
 .header__textitem:hover {
   color: #5624d0;
@@ -461,7 +466,6 @@ html {
   max-width: 100%;
   height: auto;
   background: #f7f9fa;
-  display: block;
   object-fit: contain;
 }
 .fifthSection__itemText {
@@ -471,6 +475,198 @@ html {
   font-size: 1.6rem;
   padding-bottom: 4rem;
   padding-top: 1rem;
+}
+
+.footer__wrapper {
+  margin-top: 3rem;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+  background: #1c1d1f;
+  border-top: 1px solid #3e4143;
+  color: #fff;
+}
+.footer__sectionWrapper {
+  display: flex;
+  font-family: "Open Sans";
+}
+.footer__linkWrapper {
+  font-family: "Open Sans";
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  flex-basis: 25.6rem;
+  margin-right: 1.6rem;
+  margin-bottom: 0;
+}
+.footer__linkItem {
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+  padding: 0.3rem 0;
+  height: auto;
+}
+.footer__linkItem :hover {
+  text-decoration: underline;
+}
+.footer__linkDirect {
+  font-family: "Open Sans";
+  font-size: 130%;
+  text-decoration: none;
+  color: white;
+}
+.footer__language {
+  padding: 0 0 2.4rem;
+  order: 1;
+  flex-shrink: 0;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  padding: 0 1.4rem;
+  height: 4rem;
+  font-size: 150%;
+  gap: 0.5rem;
+  background-color: #1c1d1f;
+}
+.footer__language:hover {
+  background-color: #252729;
+}
+.footer__langMobile {
+  display: none;
+  margin-bottom: 2rem;
+}
+.footer__copyrightWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.4rem 0 3.2rem;
+  font-family: "Open Sans";
+  font-size: 130%;
+}
+
+@media screen and (max-width: 1500px) {
+  .header__textItem1 {
+    display: none;
+  }
+  .firstSection__textWrapper {
+    left: 20rem;
+    top: 16rem;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .firstSection__textWrapper {
+    left: 12rem;
+    top: 16rem;
+  }
+  .secondSection__item5 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .header__textItem1 {
+    display: none;
+  }
+  .firstSection__textWrapper {
+    left: 8rem;
+    top: 16rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .header__textItem2 {
+    display: none;
+  }
+  .main {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .header__textItem1 {
+    display: none;
+  }
+  .firstSection__textWrapper {
+    left: 4rem;
+    top: 13rem;
+  }
+  .secondSection__item4 {
+    display: none;
+  }
+  .thirdSection__divWrapper {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1150px) and (max-width: 950px) {
+  .header__endWrapper,
+.header__searchbar,
+.header__textitem {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .header__endWrapper, .header__searchbar, .header__textitem {
+    display: none;
+  }
+  .header__burgerMenu {
+    display: block !important;
+  }
+  .firstSection__textWrapper {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) and (max-width: 850px) {
+  .secondSection__category7 {
+    display: none !important;
+  }
+  .secondSection__item3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) and (max-width: 700px) {
+  .secondSection__offeredtextWrapper {
+    display: none;
+  }
+  .secondSection__category6 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1150px) and (max-width: 600px) {
+  .secondSection__item2 {
+    display: none;
+  }
+  .footer__sectionWrapper {
+    display: block;
+  }
+  .footer__language {
+    margin-top: 2rem;
+  }
+  .footer__langMobile {
+    display: flex;
+  }
+  .footer__langDesktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) and (max-width: 550px) {
+  .secondSection__category5 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1150px) and (max-width: 450px) {
+  .secondSection__category4 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1150px) and (max-width: 350px) {
+  .secondSection__category3 {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
