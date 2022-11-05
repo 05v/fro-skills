@@ -600,6 +600,9 @@ html {
     margin-left: auto;
     align-items: center;
   }
+  .thirdSection__itemWrapper {
+    padding: 1.4rem 0;
+  }
 }
 @media screen and (max-width: 1150px) and (max-width: 950px) {
   .header__endWrapper,

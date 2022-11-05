@@ -75,6 +75,10 @@
             margin-left: auto;
             align-items: center;
         }
+
+        &__itemWrapper {
+            padding: 1.4rem 0;
+        }
     }
 
     @media screen and (max-width:950px) {
