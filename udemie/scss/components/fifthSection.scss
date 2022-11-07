@@ -1,77 +1,39 @@
 @use '../abstracts/variables';
 
 .fifthSection {
-    margin-top: 6.4rem;
-    width: 100%;
-    max-width: 134rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 2.4rem;
-    padding-left: 2.4rem;
+    margin-bottom: 6.4rem;
+    margin-top: 4.8rem;
+    background: #f7f9fa;
 
     &__section {
+        padding: 3.2rem;
         display: flex;
         flex-direction: column;
-    }
-
-    &__textWrapper {
-        max-width: 80rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
+        text-align: center;
     }
 
     &__h2 {
-        font-family: map-get(variables.$fontVars, 'normalFont');
-        font-weight: 700;
-        line-height: 1.2;
-        letter-spacing: -.02rem;
+        font-family: map-get(variables.$fontVars, 'fancyFont');
         font-size: 2.4rem;
-        margin: 0 0 2.4rem;
+        max-width: 60rem;
     }
 
-    &__carouselWrapper {
-        display: flex;
-        flex-direction: row;
-    }
-
-    &__itemsWrapper {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -1.6rem -3.2rem 0;
+    &__p {
         font-family: map-get(variables.$fontVars, 'normalFont');
-        font-weight: 400;
-        line-height: 1.4;
         font-size: 1.6rem;
-        color: #1c1d1f;
-
-        &:hover {
-            cursor: pointer;
-        }
+        margin: 0.8rem 0 2.4rem;
     }
 
-    &__item {
-        margin: 0 1.6rem 1.6rem 0;
+    &__imageList {
         display: flex;
-        flex-direction: column;
-        position: relative;
-        overflow: hidden;
-        padding-right: 2rem;
+        gap: 12rem;
     }
 
-    &__itemImage {
-        max-width: 100%;
-        height: auto;
-        background: #f7f9fa;
-        object-fit: contain;
-    }
-
-    &__itemText {
-        font-family: map-get(variables.$fontVars, 'normalFont');
-        font-weight: 600;
-        line-height: 1.4;
-        font-size: 1.6rem;
-        padding-bottom: 4rem;
-        padding-top: 1rem;
+    &__image {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0;
+        width: 11.5rem;
     }
 }

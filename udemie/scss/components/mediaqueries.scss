@@ -132,6 +132,12 @@
                 display: none !important;
             }
         }
+
+        .fifthSection {
+            &__imageList {
+                gap: 5rem;
+            }
+        }
     }
 
     @media screen and (max-width:600px) {
@@ -158,12 +164,28 @@
                 display: none;
             }
         }
+
+        .seventhSection {
+            &__button {
+                width: 100%;
+            }
+        }
     }
 
     @media screen and (max-width:550px) {
         .secondSection {
             &__category5 {
                 display: none !important;
+            }
+        }
+
+        .fifthSection {
+            &__imageList {
+                gap: 3rem;
+            }
+
+            &__image {
+                width: 9rem;
             }
         }
     }
@@ -180,6 +202,12 @@
         .secondSection {
             &__category3 {
                 display: none !important;
+            }
+        }
+
+        .fifthSection {
+            &__imageList {
+                gap: 1rem;
             }
         }
     }
