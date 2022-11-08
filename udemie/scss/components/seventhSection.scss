@@ -45,7 +45,7 @@
         font-family: map-get(variables.$fontVars, 'normalFont');
         font-size: map-get(variables.$fontVars, 'smallerFontSize');
         font-weight: map-get(variables.$fontVars, 'boldFontWeight');
-        color: #5624d0;
+        color: map-get(variables.$colorVars, 'themeColor');
         text-decoration: underline;
     }
 

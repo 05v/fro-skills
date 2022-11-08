@@ -20,7 +20,7 @@
         font-size: 150%;
 
         &:hover {
-            color: #5624d0;
+            color: map-get(variables.$colorVars, 'themeColor');
         }
     }
 
@@ -41,7 +41,7 @@
         white-space: nowrap;
 
         &:hover {
-            color: #5624d0;
+            color: map-get(variables.$colorVars, 'themeColor');
         }
     }
 

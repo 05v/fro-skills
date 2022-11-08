@@ -204,6 +204,12 @@
                 display: none !important;
             }
         }
+
+        .sixthSection {
+            &__itemText {
+                font-size: 1.3rem;
+            }
+        }
     }
 
     @media screen and (max-width:350px) {
