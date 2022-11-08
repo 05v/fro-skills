@@ -6,10 +6,9 @@
         padding-bottom: 2.4rem;
         padding-left: 4.8rem;
         padding-right: 4.8rem;
-
-        background: #1c1d1f;
+        background: map-get(variables.$colorVars, 'footerBackground');
         border-top: 1px solid #3e4143;
-        color: #fff;
+        color: map-get(variables.$colorVars, 'invertedTextColor');
     }
 
     &__sectionWrapper {
@@ -44,7 +43,7 @@
         font-family: map-get(variables.$fontVars, 'normalFont');
         font-size: 130%;
         text-decoration: none;
-        color: white;
+        color: map-get(variables.$colorVars, 'invertedTextColor');
     }
 
     &__language {
@@ -54,15 +53,15 @@
         margin-left: auto;
         align-items: center;
         justify-content: center;
-        border: 1px solid #ffffff;
+        border: 1px solid map-get(variables.$colorVars, 'invertedTextColor');
         padding: 0 1.4rem;
         height: 4rem;
         font-size: 150%;
         gap: 0.5rem;
-        background-color: #1c1d1f;
+        background-color: map-get(variables.$colorVars, 'footerBackground');
 
         &:hover {
-            background-color: #252729;
+            background-color: lighten(map-get(variables.$colorVars, 'footerBackground'), 5%);
         }
     }
 

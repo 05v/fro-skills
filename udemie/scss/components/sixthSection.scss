@@ -22,10 +22,10 @@
 
     &__h2 {
         font-family: map-get(variables.$fontVars, 'normalFont');
-        font-weight: 700;
+        font-weight: map-get(variables.$fontVars, 'boldFontWeight');
         line-height: 1.2;
         letter-spacing: -.02rem;
-        font-size: 2.4rem;
+        font-size: map-get(variables.$fontVars, 'h2FontSize');
         margin: 0 0 2.4rem;
     }
 
@@ -41,7 +41,7 @@
         font-family: map-get(variables.$fontVars, 'normalFont');
         font-weight: 400;
         line-height: 1.4;
-        font-size: 1.6rem;
+        font-size: map-get(variables.$fontVars, 'smallerFontSize');
         color: #1c1d1f;
 
         &:hover {
@@ -61,7 +61,7 @@
     &__itemImage {
         max-width: 100%;
         height: auto;
-        background: #f7f9fa;
+        background: map-get(variables.$colorVars, 'backgroundSplitter');
         object-fit: contain;
     }
 
@@ -69,7 +69,7 @@
         font-family: map-get(variables.$fontVars, 'normalFont');
         font-weight: 600;
         line-height: 1.4;
-        font-size: 1.6rem;
+        font-size: map-get(variables.$fontVars, 'smallerFontSize');
         padding-bottom: 4rem;
         padding-top: 1rem;
     }

@@ -39,12 +39,12 @@
     &__h2 {
         font-family: map-get(variables.$fontVars, 'fancyFont');
         font-size: 3.2rem;
-
+        color: map-get(variables.$colorVars, 'textColor');
     }
 
     &__p {
         font-family: map-get(variables.$fontVars, 'normalFont');
-        font-size: 1.9rem;
-
+        font-size: map-get(variables.$fontVars, 'mediumFontSize');
+        color: map-get(variables.$colorVars, 'textColor');
     }
 }

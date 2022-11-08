@@ -7,8 +7,7 @@
     gap: 5rem;
     padding: 1.2rem;
     font-family: map-get(variables.$fontVars, "normalFont");
-    // background-color: blue;
-    box-shadow: 0 0.2rem 0.2rem rgb(208, 208, 208);
+    box-shadow: 0 0.2rem 0.2rem darken(map-get(variables.$colorVars, 'invertedTextColor'), 20%);
     gap: 1.2rem;
     z-index: 1;
 
@@ -47,7 +46,7 @@
     }
 
     &__searchbar {
-        background-color: darken(white, 3%);
+        background-color: darken(map-get(variables.$colorVars, 'invertedTextColor'), 3%);
         display: flex;
         align-items: center;
         height: 100%;
@@ -64,7 +63,7 @@
 
     &__searchbarInput {
         border: none;
-        background-color: darken(white, 3%);
+        background-color: darken(map-get(variables.$colorVars, 'invertedTextColor'), 3%);
         font-family: map-get(variables.$fontVars, "normalFont");
         width: 100%;
         height: 2.5rem;
@@ -93,14 +92,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: white;
+        background: map-get(variables.$colorVars, 'invertedTextColor');
         border: 1px solid #000000;
         padding: 0 1.4rem;
         height: 4rem;
-        font-weight: 600;
+        font-weight: map-get(variables.$fontVars, 'boldFontWeight');
 
         &:hover {
-            background: rgb(245, 245, 245);
+            background: map-get(variables.$colorVars, 'invertedTextColor');
             cursor: pointer;
         }
     }
@@ -108,7 +107,7 @@
     &__signup {
         text-align: center;
         text-decoration: none;
-        color: white;
+        color: map-get(variables.$colorVars, 'invertedTextColor');
         display: flex;
         align-items: center;
         justify-content: center;
@@ -116,7 +115,7 @@
         border: 1px solid black;
         padding: 0 1.4rem;
         height: 4rem;
-        font-weight: 600;
+        font-weight: map-get(variables.$fontVars, 'boldFontWeight');
 
         &:hover {
             background: #000000;
@@ -128,7 +127,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: white;
+        background: map-get(variables.$colorVars, 'invertedTextColor');
         border: 1px solid #000000;
         padding: 0 1.4rem;
         height: 4rem;

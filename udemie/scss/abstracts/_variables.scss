@@ -6,7 +6,12 @@ $fontVars: (
     "fancyFont": 'Playfair Display',
     "normalFont": 'Open Sans',
 
-    "headerFontSize": 1.4rem
+    "h2FontSize": 2.4rem,
+    "mediumFontSize": 1.9rem,
+    "smallerFontSize": 1.6rem,
+    "headerFontSize": 1.4rem,
+
+    "boldFontWeight": 700
 );
 
 $tasksVars: (
@@ -15,10 +20,13 @@ $tasksVars: (
     "listItemColor": #ECECEC
 );
 
-$labelVars: (
-    "default":#28a537,
-    "purple": #A03C78,
-    "orange": #E26A2C,
-    "blue": #0E9AA7,
-    "red": #C21010
+$colorVars: (
+    "background": white,
+    "backgroundSplitter": #f7f9fa,
+
+    "textColor": black,
+    "invertedTextColor": white,
+    "inactiveText":#6a6f73,
+
+    "footerBackground": #1c1d1f,
 );

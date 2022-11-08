@@ -10,13 +10,15 @@
 
 
     &__h2 {
-        font-size: 2.4rem;
+        font-size: map-get(variables.$fontVars, 'h2FontSize');
         font-family: map-get(variables.$fontVars, 'fancyFont');
+        color: map-get(variables.$colorVars, 'textColor');
     }
 
     &__p {
-        font-size: 1.9rem;
         font-family: map-get(variables.$fontVars, 'normalFont');
+        color: map-get(variables.$colorVars, 'textColor');
+        font-size: map-get(variables.$fontVars, 'mediumFontSize');
         margin: 1.6rem 0 0;
     }
 
@@ -28,9 +30,10 @@
     }
 
     &__categoryItem {
+        font-family: map-get(variables.$fontVars, 'normalFont');
+        color: map-get(variables.$colorVars, 'textColor');
         position: relative;
         font-size: 1.5rem;
-        font-family: map-get(variables.$fontVars, 'normalFont');
         font-weight: 600;
         padding: 1.3rem 0;
     }
@@ -40,10 +43,10 @@
     }
 
     &__inactive {
-        color: #6a6f73;
+        color: map-get(variables.$colorVars, 'inactiveText');
 
         &:hover {
-            color: black;
+            color: map-get(variables.$colorVars, 'textColor');
             cursor: pointer;
         }
     }
@@ -62,16 +65,19 @@
 
     &__h2 {
         font-family: map-get(variables.$fontVars, 'normalFont');
-        font-weight: 700;
+        font-size: map-get(variables.$fontVars, 'h2FontSize');
+        color: map-get(variables.$colorVars, 'textColor');
+        font-weight: map-get(variables.$fontVars, 'boldFontWeight');
         line-height: 1.2;
         letter-spacing: -.02rem;
-        font-size: 2.4rem;
         margin-bottom: 0.8rem;
         max-width: 80rem;
     }
 
     &__p {
         font-family: map-get(variables.$fontVars, 'normalFont');
+        font-size: map-get(variables.$fontVars, 'smallerFontSize');
+        color: map-get(variables.$colorVars, 'textColor');
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
@@ -82,7 +88,6 @@
         max-width: 80rem;
         font-weight: 500;
         line-height: 1.4;
-        font-size: 1.6rem;
     }
 
     &__button {
@@ -91,7 +96,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: white;
+        background: map-get(variables.$colorVars, 'invertedTextColor');
         border: 1px solid #000000;
         padding: 0 1.4rem;
         height: 4rem;
@@ -99,7 +104,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: darken(white, 3%);
+            background-color: darken(map-get(variables.$colorVars, 'invertedTextColor'), 3%);
         }
     }
 
@@ -138,6 +143,9 @@
     }
 
     &__h3 {
+        font-family: map-get(variables.$fontVars, 'normalFont');
+        font-size: map-get(variables.$fontVars, 'smallerFontSize');
+        color: map-get(variables.$colorVars, 'textColor');
         margin-top: 0.8rem;
         margin-bottom: 0.4rem;
         display: -webkit-box !important;
@@ -146,11 +154,9 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        font-family: map-get(variables.$fontVars, 'normalFont');
-        font-weight: 700;
+        font-weight: map-get(variables.$fontVars, 'boldFontWeight');
         line-height: 1.2;
         letter-spacing: -.02rem;
-        font-size: 1.6rem;
         max-width: 25rem;
     }
 
@@ -174,7 +180,7 @@
         font-family: map-get(variables.$fontVars, 'normalFont');
         margin-right: 0.4rem;
         color: #b4690e;
-        font-weight: 700;
+        font-weight: map-get(variables.$fontVars, 'boldFontWeight');
         line-height: 1.2;
         letter-spacing: -.02rem;
         font-size: 1.3rem;
@@ -201,8 +207,8 @@
         font-family: map-get(variables.$fontVars, 'normalFont');
         line-height: 1;
         padding: 0.4rem 0;
-        font-weight: 700;
+        font-weight: map-get(variables.$fontVars, 'boldFontWeight');
         letter-spacing: -.02rem;
-        font-size: 1.6rem;
+        font-size: map-get(variables.$fontVars, 'smallerFontSize');
     }
 }

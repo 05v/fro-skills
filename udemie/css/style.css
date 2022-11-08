@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background: white;
+}
+
 .main {
   padding: 0 2rem;
   display: flex;
@@ -23,7 +27,7 @@ html {
   gap: 5rem;
   padding: 1.2rem;
   font-family: "Open Sans";
-  box-shadow: 0 0.2rem 0.2rem rgb(208, 208, 208);
+  box-shadow: 0 0.2rem 0.2rem #cccccc;
   gap: 1.2rem;
   z-index: 1;
 }
@@ -96,10 +100,10 @@ html {
   border: 1px solid #000000;
   padding: 0 1.4rem;
   height: 4rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .header__login:hover {
-  background: rgb(245, 245, 245);
+  background: white;
   cursor: pointer;
 }
 .header__signup {
@@ -113,7 +117,7 @@ html {
   border: 1px solid black;
   padding: 0 1.4rem;
   height: 4rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .header__signup:hover {
   background: #000000;
@@ -166,10 +170,12 @@ html {
 .firstSection__h2 {
   font-family: "Playfair Display";
   font-size: 3.2rem;
+  color: black;
 }
 .firstSection__p {
   font-family: "Open Sans";
   font-size: 1.9rem;
+  color: black;
 }
 
 .secondSection {
@@ -183,10 +189,12 @@ html {
 .secondSection__h2 {
   font-size: 2.4rem;
   font-family: "Playfair Display";
+  color: black;
 }
 .secondSection__p {
-  font-size: 1.9rem;
   font-family: "Open Sans";
+  color: black;
+  font-size: 1.9rem;
   margin: 1.6rem 0 0;
 }
 .secondSection__categoryWrapper {
@@ -196,9 +204,10 @@ html {
   overflow-x: hidden;
 }
 .secondSection__categoryItem {
+  font-family: "Open Sans";
+  color: black;
   position: relative;
   font-size: 1.5rem;
-  font-family: "Open Sans";
   font-weight: 600;
   padding: 1.3rem 0;
 }
@@ -224,15 +233,18 @@ html {
 }
 .secondSection__h2 {
   font-family: "Open Sans";
+  font-size: 2.4rem;
+  color: black;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02rem;
-  font-size: 2.4rem;
   margin-bottom: 0.8rem;
   max-width: 80rem;
 }
 .secondSection__p {
   font-family: "Open Sans";
+  font-size: 1.6rem;
+  color: black;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -243,7 +255,6 @@ html {
   max-width: 80rem;
   font-weight: 500;
   line-height: 1.4;
-  font-size: 1.6rem;
 }
 .secondSection__button {
   text-align: center;
@@ -288,6 +299,9 @@ html {
   min-width: 1px;
 }
 .secondSection__h3 {
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  color: black;
   margin-top: 0.8rem;
   margin-bottom: 0.4rem;
   display: -webkit-box !important;
@@ -296,11 +310,9 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-  font-family: "Open Sans";
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02rem;
-  font-size: 1.6rem;
   max-width: 25rem;
 }
 .secondSection__description {
@@ -370,7 +382,7 @@ html {
   gap: 1.4rem;
 }
 .thirdSection__icon {
-  background: #d1d7dc;
+  background: #d8e1e6;
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
@@ -404,10 +416,11 @@ html {
 }
 .fourthSection__h2 {
   font-family: "Open Sans";
+  font-size: 2.4rem;
+  color: black;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02rem;
-  font-size: 2.4rem;
 }
 
 .fifthSection {
@@ -425,11 +438,13 @@ html {
 .fifthSection__h2 {
   font-family: "Playfair Display";
   font-size: 2.4rem;
+  color: black;
   max-width: 60rem;
 }
 .fifthSection__p {
   font-family: "Open Sans";
   font-size: 1.6rem;
+  color: black;
   margin: 0.8rem 0 2.4rem;
 }
 .fifthSection__imageList {
@@ -581,7 +596,7 @@ html {
   padding-right: 4.8rem;
   background: #1c1d1f;
   border-top: 1px solid #3e4143;
-  color: #fff;
+  color: white;
 }
 .footer__sectionWrapper {
   display: flex;
@@ -620,7 +635,7 @@ html {
   margin-left: auto;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ffffff;
+  border: 1px solid white;
   padding: 0 1.4rem;
   height: 4rem;
   font-size: 150%;
@@ -628,7 +643,7 @@ html {
   background-color: #1c1d1f;
 }
 .footer__language:hover {
-  background-color: #252729;
+  background-color: #282a2c;
 }
 .footer__langMobile {
   display: none;
@@ -767,6 +782,11 @@ html {
   }
   .fifthSection__image {
     width: 9rem;
+  }
+  .footer__copyrightWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
   }
 }
 @media screen and (max-width: 1150px) and (max-width: 450px) {
